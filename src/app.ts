@@ -6,7 +6,7 @@ import createServer from "./utils/server";
 import logger from "./utils/logger";
 import connectDb from "./utils/connectDb";
 
-const port = config.get<number>("port");
+const port = 3001;
 const app = createServer();
 
 app.listen(port, async () => {

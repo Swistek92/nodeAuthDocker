@@ -7,14 +7,14 @@ exports.dbUrl = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
 const logger_1 = __importDefault(require("./logger"));
 exports.dbUrl = process.env.DATABASE;
-const url = "mongodb+srv://swistek_92:p2e!N&[%CYDk'F;<fRP!KK,QcI2]9Fpa.U][O@cluster0.13vko.mongodb.net/?retryWrites=true&w=majority";
+const url = "mongodb+srv://swistek_92:GHsFnmfXdT7rC40Y@cluster0.13vko.mongodb.net/?retryWrites=true&w=majority";
 async function connectDb() {
     try {
         // mongoose.set("strictQuery", false);
         if (!exports.dbUrl)
             new Error("no dburl");
         logger_1.default.info(exports.dbUrl);
-        await mongoose_1.default.connect(exports.dbUrl);
+        await mongoose_1.default.connect(url);
         logger_1.default.info("db connected");
     }
     catch (error) {

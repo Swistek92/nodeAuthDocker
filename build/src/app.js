@@ -29,11 +29,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* eslint-disable import/first */
 const dotenv = __importStar(require("dotenv"));
 dotenv.config();
-const config_1 = __importDefault(require("config"));
 const server_1 = __importDefault(require("./utils/server"));
 const logger_1 = __importDefault(require("./utils/logger"));
 const connectDb_1 = __importDefault(require("./utils/connectDb"));
-const port = config_1.default.get("port");
+const port = 3001;
 const app = (0, server_1.default)();
 app.listen(port, async () => {
     logger_1.default.info(`listen http://localhost:${port}/ ons 22port ${port}`);
