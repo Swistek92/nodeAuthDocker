@@ -16,7 +16,7 @@
 /coverage
 
 # production
-
+.note
 
 # misc
 build

@@ -10,7 +10,7 @@ const port = 3001;
 const app = createServer();
 
 app.listen(port, async () => {
-  logger.info(`listen http://localhost:${port}/ ons 22port ${port}`);
+  logger.info(`listen http://localhost:${port}/ ons 22psssort ${port}`);
   const db = await connectDb();
   console.log(db);
 });

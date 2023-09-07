@@ -1,6 +1,6 @@
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import express, { Express } from "express";
+import express, { Express, Request, Response } from "express";
 import morgan from "morgan";
 import { UserRouter, MemRouter, CategoryRouter } from "../Routes";
 
@@ -12,6 +12,10 @@ function createServer() {
   app.use(cors());
   app.use(morgan("dev"));
   app.use(cookieParser());
+
+  app.get("/", (req: Request, res: Response) => {
+    res.status(200).json("asdasdasdas1111");
+  });
 
   app.use("/api", UserRouter);
   app.use("/api", MemRouter);
