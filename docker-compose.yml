@@ -6,6 +6,7 @@ services:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
   node-app:
     build: .
+    image: swistek/node-app01
     volumes:
       - ./:/app
       - /app/node_modules
