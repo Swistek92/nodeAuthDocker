@@ -24,6 +24,8 @@ UserRouter.post(
   "/user/register",
   [validateResource(userSchemas.create), validateUserAccountNoDuplicate],
   async (req: Request, res: Response) => {
+    // return res.status(200).json("123213");
+
     const { name, password, account } = req.body;
     try {
       const response = await userCtrl.register({

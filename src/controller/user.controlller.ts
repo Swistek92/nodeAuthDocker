@@ -97,7 +97,7 @@ const userCtrl = {
         if (process.env.test) {
           return new SerializeResponse(200, "Ok", msg, activeToken);
         } else {
-          await SendRegistrationSms(`${account}`, url, msg);
+          // await SendRegistrationSms(`${account}`, url, msg);
           return new SerializeResponse(200, "Ok", msg);
         }
       } catch (error: any) {

@@ -13,4 +13,8 @@ NtE06fAINZPtgQ0XtwbjoiF8Em/P+jmIpY3OlLnDNDt7CV3kSju1t/ndjUssfmmr
 hilaKxczxOPs0nN3G2aFPBPzXSmWw95j52ZzeP7hTcx4s3PVfwy3UuMzx6PWzMHO
 nwIDAQAB
 -----END PUBLIC KEY-----`,
+  MONGO_IP: process.env.MONGO_IP || "mongo",
+  MONGO_PORT: process.env.MONGO_PORT || 27017,
+  MONGO_USER: process.env.MONGO_USER,
+  MONGO_PASSWORD: process.env.MONGO_PASSWORD,
 };
