@@ -7,7 +7,6 @@ RUN if [ "$NODE_ENV" = "development" ]; \
           else npm install --only=production; \
           fi
 COPY . ./
-RUN npm run build
 ENV PORT 3001
 EXPOSE ${PORT}
 CMD ["node", "build/src/app.js"]
