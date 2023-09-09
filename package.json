@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "prod": "npm run build && node build/src/app.js",
     "test": "jest --watchAll -- user.test.ts",
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
   },
