@@ -2,8 +2,16 @@ version: "3"
 services:
   nginx:
     ports:
-      - "80:80"
+      - "9696:80"
   node-app:
+    image: swistek/node-app01
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: any
+      update_config:
+        parallelism: 1
+        delay: 15s
     build:
       context: .
       args:
