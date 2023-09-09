@@ -18,9 +18,6 @@
 # production
 .note
 
-# misc
-build
-/build
 .DS_Store
 .env.local
 .env.development.local
