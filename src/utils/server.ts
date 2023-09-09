@@ -13,7 +13,7 @@ function createServer() {
   app.use(cors());
   app.use(morgan("dev"));
   app.use(cookieParser());
-  app.get("/", (req: Request, res: Response) => {
+  app.get("/api/", (req: Request, res: Response) => {
     res.status(200).json("asdasdasd12321312s1111222");
   });
 
