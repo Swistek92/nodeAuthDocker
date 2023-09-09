@@ -2,7 +2,7 @@ version: "3"
 services:
   nginx:
     ports:
-      - "9696:80"
+      - "80:80"
   node-app:
     image: swistek/node-app01
     deploy:
