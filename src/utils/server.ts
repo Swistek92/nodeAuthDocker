@@ -14,7 +14,7 @@ function createServer() {
   app.use(morgan("dev"));
   app.use(cookieParser());
   app.get("/api/", (req: Request, res: Response) => {
-    res.status(200).json("123");
+    res.status(200).json("v122");
   });
 
   app.use("/api", UserRouter);
